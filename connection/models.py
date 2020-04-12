@@ -9,7 +9,6 @@ class Message(models.Model):
     email = models.EmailField(max_length=255)
     first_name = models.CharField(max_length=16)
     last_name = models.CharField(max_length=16)
-    purpose = models.CharField(max_length=40)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True, auto_created=True)
     updated_at = models.DateTimeField(auto_now=True)
